@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
         //                      an individual item in the ListView we are creating.
         // Here you should enter your code that fills the ListView
         // 1. Create an array
-        String[] rawData = {"Leif", "Ulla", "Kjell"};
+        // String[] rawData = {"Leif", "Ulla", "Kjell"};
 
         // 2. Create a List object with your array from step 1 as in-data
-        List<String> listData = new ArrayList<String>(Arrays.asList(rawData));
+        List<String> listData = new ArrayList<String>(Arrays.asList(mountainNames));
 
 
         // 3. Create an ArrayAdapter object that connects
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         ListView myListView = (ListView)findViewById(R.id.my_listview);
         myListView.setAdapter(adapter);
 
-        adapter.add("Hilding");
+        // adapter.add("Hilding");
         // 6. Style the ListView items according to Material Design
         //    See: https://material.io/guidelines/components/lists.html#lists-specs
         //    Look for "singel line specs" for "text only" lists and modify the list_item_textview
